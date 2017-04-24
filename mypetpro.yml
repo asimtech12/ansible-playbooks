@@ -1,0 +1,7 @@
+#this is my pet project parent yaml file
+---
+ - hosts: webservers
+   sudo: yes
+
+   roles:
+    - mypetpro 

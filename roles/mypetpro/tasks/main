@@ -1,0 +1,6 @@
+---
+ - name: checking the connections with the hosts
+   command: /bin/echo hello Asim
+
+ - name: install apache on host machines
+   apt: name=apache2 update_cache=yes state=latest
