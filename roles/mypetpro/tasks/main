@@ -4,3 +4,7 @@
 
  - name: install apache on host machines
    apt: name=apache2 update_cache=yes state=latest
+   
+ - name: install re_write apache module
+   apache2_module: name=rewrite state=present
+   notify: restart apache
